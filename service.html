@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: aqua;
+    height: 800px;
+}
+
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background:linear-gradient(to top,rgb(75, 38, 175) 50%,white);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px orange;
+}
+
+.box img{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <section id="services">
+        <h1 class="headings">SERVICES</h1>
+        <div class="row">
+            <div class="box">
+                <img src="web.png" alt="">
+                <h1 class="headings">Website Design</h1>
+                <p>A web design service provides you with a customized website design that's perfect for your business or personal site. They'll work with you to create a design that matches your brand, while giving your customers a seamless user experience that will delight them..</p>
+    
+            </div>
+            <div class="box">
+                <img src="cybersecuriety.jpg" alt="">
+                <h1 class="headings">Cyber Security<br></h1>
+                <p>Cyber security is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It's also known as information technology security or electronic information security.</p>
+                
+            </div>
+            <div class="box">
+                <img src="video-editing.jpg" alt="">
+                <h1 class="headings">Video Editing</h1>
+                <p>Video editing services include the review and refinement of video and special effects for motion pictures, television, or online video..</p>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>
